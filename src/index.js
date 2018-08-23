@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import registerServiceWorker from './registerServiceWorker.js';
 import './style/normalize.css';
 import './style/index.css';
 
-import registerServiceWorker from './registerServiceWorker.js';
 import Screen from './screen.js';
 import Keyboard from './keyboard.js';
 
@@ -13,7 +13,7 @@ class Main extends React.Component {
         registerServiceWorker();
         this.state = {number : "10"};
     }
-
+    
     theChange(number) {
         this.setState({number});
     }
