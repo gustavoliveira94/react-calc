@@ -20,7 +20,7 @@ class Main extends React.Component {
         return (
             <div className="main">
                 <Screen theValue={this.state.number} gridColumn="1/3" gridRow="1/2"/>
-                <Keyboard theChange={this.theChange.bind(this)} gridColumn="1/3" gridRow="2/3"/>
+                <Keyboard gridColumn="1/3" gridRow="2/3"/>
             </div>
         );
     }

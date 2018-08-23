@@ -14,7 +14,6 @@ export default class Keyboard extends React.Component {
     }
     
     render() {
-        this.props.theChange("10");
 
         return (
             <div className="keyboard" style={this.theStyle}>
