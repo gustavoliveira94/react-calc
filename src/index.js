@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './style/normalize.css';
 import './style/index.css';
 
+import registerServiceWorker from './registerServiceWorker.js';
 import Screen from './screen.js';
 import Keyboard from './keyboard.js';
 
 class Main extends React.Component {
     constructor() {
         super();
+        registerServiceWorker();
         this.state = {number : "10"};
     }
 
